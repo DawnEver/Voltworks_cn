@@ -1,5 +1,5 @@
-import enMessages from "@/locale/en.ts";
-import zhHansMessages from "@/locale/zhHans.ts";
+import enMessages from "@/locale/en";
+import zhHansMessages from "@/locale/zhHans";
 
 const locales = ["en", "zhHans"];
 let locale = "en";
