@@ -6,6 +6,9 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useTheme } from 'vuetify'
+import hustSvg from "@/assets/hust.svg"
+import hustLightSvg from "@/assets/hust-light.svg"
+
 const theme = useTheme()
 const logos = computed(() => {
   if (theme.global.name.value === 'light') {
@@ -13,7 +16,7 @@ const logos = computed(() => {
       {
         id: 1,
         name: "hust",
-        logoUrl: "src/assets/hust.svg",
+        logoUrl: hustSvg,
       },
     ]
   }
@@ -22,7 +25,7 @@ const logos = computed(() => {
       {
         id: 1,
         name: "hust",
-        logoUrl: "src/assets/hust-light.svg",
+        logoUrl: hustLightSvg,
       },
     ]
   }

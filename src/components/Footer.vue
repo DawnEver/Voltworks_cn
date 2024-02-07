@@ -47,12 +47,16 @@ const router = useRouter()
 
 const theme = useTheme()
 
+import logo1Svg from "@/assets/logo-1.svg"
+import logo1LightSvg from "@/assets/logo-1-light.svg"
+
 const logo1 = computed(() => {
   if (theme.global.name.value === 'light') {
-    return "src/assets/logo-1.svg"
+    return logo1Svg
   }
   else {
-    return "src/assets/logo-1-light.svg"
+
+    return logo1LightSvg
   }
 })
 
