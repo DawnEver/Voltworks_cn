@@ -10,6 +10,7 @@ declare module 'vue' {
     Collaborator: typeof import('./src/components/Collaborator.vue')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Hero: typeof import('./src/components/Hero.vue')['default']
+    HomePage: typeof import('./src/components/HomePage.vue')['default']
     Milestones: typeof import('./src/components/Milestones.vue')['default']
     Products: typeof import('./src/components/Products.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
