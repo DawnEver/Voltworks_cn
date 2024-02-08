@@ -1,30 +1,24 @@
 <template>
-    <v-carousel cycle height="1000" hide-delimiter-background show-arrows="hover">
+    <v-carousel cycle height="100%" hide-delimiter-background show-arrows="hover">
         <v-carousel-item v-for="(slide, i) in slides" :key="i">
-            <v-sheet :color="colors[i]" height="100%">
-                <div class="d-flex fill-height justify-center align-center">
-                    <div class="text-h2">
-                        {{ slide }}
-                    </div>
-                </div>
-            </v-sheet>
+            <div class="d-flex fill-height justify-center align-center">
+                <v-img :src="slide.imgUrl" contain max-height="1000" />
+            </div>
+
         </v-carousel-item>
     </v-carousel>
 </template>
 
 <script setup lang="ts">
-const colors = [
-    'indigo',
-    'warning',
-    'pink darken-2',
-    'red lighten-1',
-    'deep-purple accent-4',
-]
+import hero1 from '@/assets/hero-1.png'
+import hero2 from '@/assets/hero-2.png'
+
 const slides = [
-    'First',
-    'Second',
-    'Third',
-    'Fourth',
-    'Fifth',
+    {
+        imgUrl: hero1,
+    },
+    {
+        imgUrl: hero2,
+    },
 ]
 </script>

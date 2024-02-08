@@ -12,5 +12,5 @@ export default {
     mission: '新时代电机设计领导者',
     collaborator: '合作伙伴',
     contactUs: '联系我们',
-
+    learnMore: '了解更多',
 }

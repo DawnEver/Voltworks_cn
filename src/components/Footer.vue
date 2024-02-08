@@ -9,13 +9,13 @@
       </v-col>
       <v-col>
         <v-row>
-          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" icon>
+          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" href="mailto:mingyangbao@hust.edu.cn" target="_blanke" icon>
             <v-icon>mdi-email-edit</v-icon></v-btn>
-          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" icon>
+          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" href="https://weixin.qq.com" target="_blanke" icon>
             <v-icon>mdi-wechat</v-icon></v-btn>
-          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" icon>
+          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2"  href="https://github.com/Hi-Motor" target="_blanke" icon>
             <v-icon>mdi-github</v-icon></v-btn>
-          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" icon>
+          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" href="https://bilibli.com" target="_blanke" icon>
             <img src="@/assets/bilibili.svg" /></v-btn>
         </v-row>
         <v-row>
@@ -38,18 +38,11 @@
 </template>
 
 <script setup lang="ts">
-
-import { computed } from 'vue'
-
-import { useTheme } from 'vuetify'
-import { useRouter } from 'vue-router'
-const router = useRouter()
-
-const theme = useTheme()
-
 import logo1Svg from "@/assets/logo-1.svg"
 import logo1LightSvg from "@/assets/logo-1-light.svg"
-
+import { computed } from 'vue'
+import { useTheme } from 'vuetify'
+const theme = useTheme()
 const logo1 = computed(() => {
   if (theme.global.name.value === 'light') {
     return logo1Svg
@@ -60,24 +53,4 @@ const logo1 = computed(() => {
   }
 })
 
-const navs = [
-
-  {
-    title: "About Us",
-    to: "/",
-  },
-  {
-    title: "Contact Us",
-    to: "/",
-  },
-  {
-    title: "Team",
-    to: "/",
-  },
-  {
-    title: "Blog",
-    icon: "mdi-account",
-    to: "/",
-  },
-];
 </script>

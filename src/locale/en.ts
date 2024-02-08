@@ -12,4 +12,5 @@ export default {
     mission: 'New Generation of Motor Design',
     collaborator: 'Collaborators',
     contactUs: 'Contact Us',
+    learnMore: 'Learn More',
 }

@@ -2,7 +2,7 @@
     <v-card>
         <v-toolbar color="primary">
             <v-toolbar-title>
-                <img src="@/assets/logo-2-light.svg" alt="logo" width="100" />
+                <img src="@/assets/logo-2-light.svg" alt="logo" width="100"/>
             </v-toolbar-title>
             <v-spacer />
 
@@ -13,7 +13,7 @@
                     </v-btn>
                 </template>
                 <v-list bg-color="white">
-                    <v-list-item v-for="(product, i) in products" :key="i">
+                    <v-list-item v-for="(product, i) in products" :key="i" :href="product.link" target="_blanke">
                         <v-list-item-title>{{ product.title }}</v-list-item-title>
                     </v-list-item>
                 </v-list>
@@ -37,10 +37,12 @@
 
 const products = [
     {
-        title: "Hi-Motor Designer"
+        title: "Hi-Motor Designer",
+        link:"https://hi-motor.site",
     },
     {
-        title: "Hi-Motor Hub"
+        title: "Hi-Motor Hub",
+        link:"https://hub.hi-motor.site",
     },
 ]
 import { useI18n } from 'vue-i18n' // 多语言
