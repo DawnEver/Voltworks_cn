@@ -5,8 +5,7 @@
       {{ $t("product") }}
     </h1>
     <v-container>
-    <div class="d-flex flex-row">
-      <v-tabs v-model="tab" direction="vertical" color="primary">
+      <v-tabs v-model="tab" color="primary">
         <v-tab :value="product.id" v-for="product in products" :key="product.id">
           <v-icon start>
             {{ product.icon }}
@@ -31,7 +30,6 @@
           </v-card>
         </v-window-item>
       </v-window>
-    </div>
   </v-container>
   </v-sheet>
 </template>
