@@ -99,7 +99,7 @@ const markers = computed(() => {
             {
                 color: 'green',
                 marker: 'Jan 4,2024',
-                title: 'Found Coorporation',
+                title: 'Set up Wuhan Voltworks S&T Ltd.',
                 content: 'Wuhan Voltworks S&T Ltd. was founded in HUST',
                 link: '',
             },

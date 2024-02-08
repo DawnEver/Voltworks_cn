@@ -1,9 +1,10 @@
 <template>
-  <v-sheet elevation="0" color="transparent" class="mx-10 my-10">
+  <v-sheet elevation="0" color="transparent" class="ml-2 my-10">
 
     <h1 class="font-weight-black text-h3 pb-2" align="center">
       {{ $t("product") }}
     </h1>
+    <v-container>
     <div class="d-flex flex-row">
       <v-tabs v-model="tab" direction="vertical" color="primary">
         <v-tab :value="product.id" v-for="product in products" :key="product.id">
@@ -16,10 +17,10 @@
       </v-tabs>
       <v-window v-model="tab">
         <v-window-item :value="product.id" v-for="product in products" :key="product.id">
-          <v-card flat>
+          <v-card flat class="ml-10">
             <v-card-text>
               <v-container align="center">
-                <img :src="product.imgUrl" width=90% />
+                <img :src="product.imgUrl" width=100% />
               </v-container>
               {{ product.description }}
             </v-card-text>
@@ -31,7 +32,7 @@
         </v-window-item>
       </v-window>
     </div>
-
+  </v-container>
   </v-sheet>
 </template>
 
