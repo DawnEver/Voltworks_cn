@@ -2,18 +2,18 @@ import enMessages from "@/locale/en";
 import zhHansMessages from "@/locale/zhHans";
 
 const locales = ["en", "zhHans"];
-let locale = "en";
+let locale = "zhHans";
 
-try {
-  const { 0: browserLang } = navigator.language.split("-");
-  if (locales.includes(browserLang)) locale = browserLang;
-} catch (e) {
-  console.log(e);
-}
+// try {
+//   const { 0: browserLang } = navigator.language.split("-");
+//   if (locales.includes(browserLang)) locale = browserLang;
+// } catch (e) {
+//   console.log(e);
+// }
 
-if (locale === "en"){
-  document.title = "Wuhan Voltworks S&T Ltd."
-}
+// if (locale === "en"){
+//   document.title = "Wuhan Voltworks S&T Ltd."
+// }
 
 export default {
   // current locale

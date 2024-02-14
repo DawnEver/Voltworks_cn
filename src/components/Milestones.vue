@@ -62,7 +62,7 @@ const markers = computed(() => {
                 marker: '2024年2月8日',
                 title: '上线 voltworks.cn 官网',
                 content: '访问 https://voltworks.cn',
-                link: 'voltworks.cn',
+                link: 'https://voltworks.cn',
             },
             {
                 color: 'red',
