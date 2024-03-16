@@ -64,7 +64,7 @@ const products = computed(() => {
         description: "Hi-Motor Hub 是一个电机设计知识库，\
           容纳当前主流电机企业全型号高性能电机。\
           无论是电机设计工程师，还是采购人员，\
-          都可以在这里获取需要带信息。",
+          都可以在这里获取需要的信息。",
         href: "https://hub.hi-motor.site",
         imgUrl: productHMH,
       }
