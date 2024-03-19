@@ -9,7 +9,7 @@
       </v-col>
       <v-col>
         <v-row>
-          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" href="mailto:mingyangbao@hust.edu.cn" target="_blanke" icon>
+          <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" href="mailto:contact@mail.voltworks.cn" target="_blanke" icon>
             <v-icon>mdi-email-edit</v-icon></v-btn>
           <v-btn class="mx-1 mb-3" color="blue-grey-darken-2" href="https://weixin.qq.com" target="_blanke" icon>
             <v-icon>mdi-wechat</v-icon></v-btn>
