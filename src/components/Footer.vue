@@ -38,8 +38,10 @@
 </template>
 
 <script setup lang="ts">
-import logo1Svg from "@/assets/logo-1.svg"
-import logo1LightSvg from "@/assets/logo-1-light.svg"
+
+const logo1Svg = "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/logo-latest/hi-motor_01.svg"
+const logo1LightSvg = "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/logo-latest/hi-motor_01_white.svg"
+
 import { computed } from 'vue'
 import { useTheme } from 'vuetify'
 const theme = useTheme()

@@ -10,15 +10,13 @@
 </template>
 
 <script setup lang="ts">
-import hero1 from '@/assets/hero-1.png'
-import hero2 from '@/assets/hero-2.png'
-
+const hero = "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/cover-latest/cover_01.jpg"
 const slides = [
     {
-        imgUrl: hero1,
+        imgUrl: hero,
     },
     {
-        imgUrl: hero2,
+        imgUrl: hero,
     },
 ]
 </script>

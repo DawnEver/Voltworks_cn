@@ -2,7 +2,7 @@
     <v-card>
         <v-toolbar color="primary">
             <v-toolbar-title>
-                <img src="@/assets/logo-2-light.svg" alt="logo" width="100"/>
+                <img src="https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/logo-latest/hi-motor_02_white.svg" alt="logo" width="100"/>
             </v-toolbar-title>
             <v-spacer />
 

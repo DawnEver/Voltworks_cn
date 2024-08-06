@@ -38,9 +38,11 @@
 import { computed } from 'vue';
 import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import productHMDZh from "@/assets/product-hmd-zh.jpg"
-import productHMDEn from "@/assets/product-hmd-en.jpg"
-import productHMH from "@/assets/product-hmh.png"
+
+const productHMDZh = "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/hi-motor-designer/hmd_model_zh.jpg"
+const productHMDEn = "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/hi-motor-designer/hmd_model_en.jpg"
+const productHMH = "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/hi-motor-hub/hmh.jpg"
+
 const { locale } = useI18n()
 const tab = ref('0')
 const products = computed(() => {
