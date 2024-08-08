@@ -10,13 +10,12 @@
 </template>
 
 <script setup lang="ts">
-const hero = "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/cover-latest/cover_01.jpg"
 const slides = [
     {
-        imgUrl: hero,
+        imgUrl: "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/cover-latest/cover_01.jpg",
     },
     {
-        imgUrl: hero,
+        imgUrl: "https://cdn.jsdelivr.net/gh/Hi-Motor/Images@main/cover-latest/cover_02.jpg",
     },
 ]
 </script>
